@@ -10,6 +10,8 @@
         <div class="caja caja8">TranslateX</div>
         <div class="caja caja9">RotateX</div>
         <div class="caja caja10">RotateY</div>
+       
+
         <div class="caja perspective1">perspective1</div>
         <div class="caja perspective2">perspective2</div>
     </div>
@@ -32,6 +34,7 @@
     <main style="background-color: grey;">
        <div class="transition12"></div>
     </main>
+    <div class="caja caja13">nueva</div>
 </body>
 
 <style>
@@ -56,6 +59,12 @@
     .caja1 {
         background-color: red;
         transform: scale(1);
+        transition: .3s;
+    }
+    .caja13 {
+       
+       /* inclinar a la izquierda */
+        transform: skew(30deg);
         transition: .3s;
     }
     .caja1:hover {
