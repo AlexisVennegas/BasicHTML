@@ -1,0 +1,242 @@
+<body>
+    <div class="scene">
+        <div class="nubes"><div class="nubedentro"></div></div>
+        <div class="nubes-2"><div class="nubedentro-2"></div></div>
+        
+        <div class="upper">
+            <div class="moon">
+                <div class="crater1"></div>
+                <div class="crater2"></div>
+                <div class="wallpaper-moon">
+                    <div class="eye"></div>
+                    <div class="brazo"></div>
+                    <div class="sonrisa"></div>
+                    <div class="cola"><div class="bola"><div class="bolas2"></div></div></div>
+                </div>
+            </div>
+            <div class="wallace"></div>
+        </div>
+        <div class="lower">
+         
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        background-color: hotpink;
+    }
+    .scene {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid black;
+        transform: translate(-50%, -50%);
+    }
+    .upper {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .lower {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .moon {
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        position: relative;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 10px solid rgba(0, 0, 0, 0.863);
+    }
+    .crater1{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.185);
+        border-radius: 50%;
+    }
+    .crater2{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.185);
+        border-radius: 50%;
+    }
+    .wallpaper-moon {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: linear-gradient(to top, rgb(82, 50, 141) 40%, rgb(124, 4, 4) 40%);
+    }
+    .wallace {
+        width: 80%;
+        height: 5px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.685);
+    }
+    .eye {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 67%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        animation: parpadeo 2s infinite;
+  
+    }
+    .brazo {
+        width: 40px;
+        height: 100px;
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        border-left: 5px solid rgba(0, 0, 0, 0.568);
+        border-right: 5px solid rgba(0, 0, 0, 0.425);
+        border-bottom: 5px solid rgba(0, 0, 0, 0.452);
+        transform: rotate(20deg);
+        background-color: rgb(82, 50, 141) ;
+        border-radius: 0 0  50px 50px;
+    }
+    .sonrisa {
+        width: 70px;
+        height: 40px;
+        position: absolute;
+        top: 70%;
+        left: 69%;
+        border-top: 5px solid rgb(0, 0, 0);
+        border-bottom: 5px solid rgba(0, 0, 0, 0.863);
+        border-left: 5px solid rgb(0, 0, 0);
+        border-right: 5px solid rgb(0, 0, 0);
+        transform: rotate(310deg);
+        background-color: rgba(255, 255, 255, 0.623) ;
+        border-radius: 50px 50px 0 0;
+    }
+    .cola {
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        top: 52%;
+        left: 4%;
+        transform: translate(-30%, -50%);
+        background-color: rgb(82, 50, 141);
+        border-radius: 0 0 50% 50%;
+
+    }
+    .bola {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(82, 50, 141);
+        border-radius: 50%;
+    }
+    .bolas2{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 130%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(82, 50, 141);
+        border-radius: 50%;
+    }
+    .nubes {
+        width: 150px;
+        height: 50px;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        background-color: white;
+        border-radius: 25px;
+        z-index: 1;
+    }
+    .nubes-2 {
+        width: 150px;
+        height: 50px;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 25px;
+        z-index: 1;
+    }
+    .nubedentro-2 {
+        width: 70px;   
+        height: 70px;
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: white;
+    }
+    .nubedentro {
+        width: 70px;   
+        height: 70px;
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: white;
+    }
+
+
+
+ 
+    .nubes {
+        animation: desplazamiento 5s infinite;
+        
+    }
+    .nubes-2 {
+        animation: desplazamiento 5s infinite;
+
+    }
+    @keyframes desplazamiento {
+        0% {
+            left: 0;
+        }
+        50% {
+            left: 100%;
+        }
+        100% {
+            left: 0;
+        }
+    }
+
+    @keyframes parpadeo {
+        0% {
+           opacity: 0;
+        }
+        100% {
+           opacity: 1;
+        }
+    }
+</style>
