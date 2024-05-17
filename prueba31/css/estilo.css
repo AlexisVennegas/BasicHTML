@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 200vh;
+    background-image: url("https://www.shutterstock.com/image-vector/seamless-pattern-funny-cartoon-dogs-600nw-1978910084.jpg");
+    /* reptia en toda la pagina */
+    background-repeat: repeat;
+    /* centrar la imagen */
+    background-position: center;
+    /* fijar la imagen */
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.carrousel {
+    position: relative;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.h1-carrousel {
+    position: absolute;
+    width: 30%;
+    font-size: 1.5rem;
+    top: 15%;
+    left: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 5px;
+    padding: 10px;
+}
+.seguntotitulo {
+    top: 85%;
+    left: 30%;
+}
+.seguntotitulo {
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.tercertitulo {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.carrouselbuttondiv {
+    position: absolute;
+    top: 56%;
+    width: 30%;
+    left: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.button-carrousel > img {
+    width: 15%;
+}
+.carrouselbuttondiv > button {
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+}
+
+.carrouselbuttondiv > button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.buttonAdopt {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+   
+    background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 10%;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  
+  
+  .buttonAdopt > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .buttonAdopt:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .buttonAdopt:active {
+    transform: scale(0.95);
+  }
+  
+  
