@@ -14,11 +14,54 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+     
+    </style>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+   <header class="py-3 mb-4 border-bottom position-sticky top-0 bg-white">
+
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <img src="https://cuponomiamx-a.akamaihd.net/img/stores/original/maskota.png" alt=""
+        class="img-thumbnail mx-auto" style="width: 90px;">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Adopta</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>
+  <!-- <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom position-sticky top-0 bg-white">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
       <img src="https://cuponomiamx-a.akamaihd.net/img/stores/original/maskota.png" alt=""
         class="img-thumbnail w-25 mx-auto">
@@ -34,7 +77,7 @@
       <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
     </ul>
 
-  </header>
+  </header> -->
 
   <!-- MAIN -->
   <main>
@@ -52,15 +95,15 @@
                 <img src="https://cdn-icons-png.flaticon.com/128/5348/5348819.png" alt="">
                 Ayuda</button>
             </div>
-            <img src="./images/primero.jpg" class="d-block w-100" alt="..." style="height: 825px;">
+            <img src="./images/primero.jpg" class="d-block w-100" alt="..." style="height: 836px;">
           </div>
           <div class="carousel-item">
             <h1 class="h1-carrousel seguntotitulo">"¡Adopta hoy a tu nuevo amigo!"</h1>
-            <img src="./images/cuarto.jpeg" class="d-block w-100" alt="..." style="height: 825px;">
+            <img src="./images/cuarto.jpeg" class="d-block w-100" alt="..." style="height: 836px;">
           </div>
           <div class="carousel-item">
             <h1 class="h1-carrousel tercertitulo">Medicina y cuidado para tus mascotas</h1>
-            <img src="./images/tercero.jpg" class="d-block w-100" alt="..." style="height: 825px;"> 
+            <img src="./images/tercero.jpg" class="d-block w-100" alt="..." style="height: 836px;"> 
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -76,8 +119,8 @@
     <!-- card -->
     <div class="contaniner mt-5">
       <div class="row">
-        <div class="col-2">
-          <div class="card h-100 p-5" style="background: linear-gradient(45deg, #46363180 0%, #976C5B 100%);">
+        <div class="col-lg-2 col-md-6 col-xl-2">
+          <div class="card h-100 p-5" style="background: linear-gradient(45deg, #463631d2 0%, #976C5B 100%);">
             <img src="https://ouch-cdn2.icons8.com/5ccPOQq69UKQcbmXfjvOScfFc9NXKG0Xu6DPNQ8b0f8/rs:fit:368:247/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMTEw/LzFlODdiYzcyLTBl/OWEtNDFlNS05N2Ey/LTMzYTA4MDQ5MWU1/OC5wbmc.png" class="card-img-top mx-auto w-100 mb-4" alt="...">
             <div class="card-body">
               <h1 class="card-title text-white text-center">Perros</h1>
@@ -94,8 +137,8 @@
             </div>
           </div>
         </div>
-        <div class="col-2">
-          <div class="card h-100 p-5" style="background: linear-gradient(45deg, #f6af6c75 0%, #ECBD73 100%);">
+        <div class="col-lg-2 col-md-6 col-xl-2">
+          <div class="card h-100 p-5" style="background: linear-gradient(45deg, #f6af6cd2 0%, #ECBD73 100%);">
             <img src="https://ouch-cdn2.icons8.com/RjiKOF2gGKiIVnIMFi0O1a4aU7DoHfhbkXr2JbUYZ3A/rs:fit:368:313/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzEy/LzliNDQ3MmVlLWZh/YjMtNDQwNy1iOWVh/LWMwOTdlYWNjNWE3/NS5wbmc.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h1 class="card-title text-black text-center">Gatos</h1>
@@ -111,8 +154,8 @@
             </div>
           </div>
         </div>
-        <div class="col-2">
-          <div class="card h-100 p-5" style="background-color: rgba(219, 216, 216, 0.479);">
+        <div class="col-lg-2 col-md-6 col-xl-2">
+          <div class="card h-100 p-5" style="background-color: rgba(219, 216, 216, 0.795);">
             <img src="https://ouch-cdn2.icons8.com/DF-XRInvbvWS9fQSpWc_SegC3meXZK8BmE-PjrdrF3Q/rs:fit:368:396/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzI3/LzQyYWIyNzliLWJj/ZDgtNGEyMC04MGRi/LTk3MzU4YWFmNTVk/OS5wbmc.png" class="card-img-top w-75 mx-auto" alt="...">
             <div class="card-body">
               <h1 class="card-title text-black text-center">Pajaros</h1>
@@ -128,8 +171,8 @@
             </div>
           </div>
         </div>
-        <div class="col-2">
-          <div class="card h-100 p-5" style="background: linear-gradient(45deg, #1e488281 0%, #709DDF 100%);">
+        <div class="col-lg-2 col-md-6 col-xl-2">
+          <div class="card h-100 p-5" style="background: linear-gradient(45deg, #1e4882d7 0%, #709DDF 100%);">
             <img src="https://ouch-cdn2.icons8.com/41Pv7w9rcbn7II_gB2vwvVCQRYE5mvpca1ZbsvMujR0/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjE5/LzRlZjE1YTgyLTI3/NjYtNDlkNC1hMGE3/LWY4ZjRmNzhjM2M5/NS5wbmc.png" class="card-img-top w-75 mx-auto" alt="...">
             <div class="card-body">
               <h1 class="card-title text-black text-center">Peces</h1>
@@ -145,6 +188,33 @@
             </div>
           </div>
         </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xl-5 p-2 border d-flex" style="border-radius: 15px;   background: linear-gradient(45deg, #45828C 0%, #A7D4D8 100%);">
+          <div class="lateralleft">
+              <img src="https://ouch-cdn2.icons8.com/T11rfGmMKgcStJyAFKNgtOfE79cadabx0DVMnvzA9Pk/rs:fit:368:313/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDQx/LzFlYWU4MWY3LWQ1/ZjYtNDM2Ny1hZjM5/LWVmNTFmMGM5Njk4/MS5wbmc.png" alt="">
+          </div>
+          <div class="lateralright">
+              <h2 class="text-white">Conoce nuestros servicioes</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xl-5 p-2 border offset-1 d-flex" style="border-radius: 20px; background: linear-gradient(45deg, #EDDAA9 0%, #B87D93 100%);">
+          <div class="lateralleft">
+            <img src="https://ouch-cdn2.icons8.com/F5Ea1suZtMYimKDkJr0CJLO_1bju6-bTyT1EuDKEg8s/rs:fit:368:254/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjcx/LzVjMzE4NWM0LWZh/NTMtNGQ1OS05ZTM2/LTZjYzBhNGU3ODg0/NC5wbmc.png" alt="">
+          </div>   
+          <div class="lateralright">
+            <h3 class="text-white text-center">Podemos ayudar a tus mascotas</h3>
+
+          </div>       
+          
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xl-12 bg-white">hola com oestamos</div>
+      </div>
     </div>
   </main>
 
