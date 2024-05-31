@@ -75,6 +75,8 @@ body {
 .hero_area {
   height: 100vh;
   background-size: cover;
+  position: relative;
+  top: -91px;
 }
 
 .sub_page .hero_area {
