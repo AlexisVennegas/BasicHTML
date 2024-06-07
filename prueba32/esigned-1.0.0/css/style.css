@@ -8,7 +8,7 @@ body {
 
 .layout_padding {
   padding: 75px 0;
-  margin-top: 200px;
+
 }
 
 .layout_padding2 {
@@ -169,7 +169,7 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-size: 24px;
+  font-size: 40px;
   color: #ffffff;
 }
 
@@ -251,6 +251,9 @@ a:focus {
           align-items: center;
   text-align: center;
 }
+.do_container {
+  margin: 150px 0;
+}
 
 .do_section .do_container {
   display: -webkit-box;
@@ -268,7 +271,7 @@ a:focus {
   text-align: center;
   position: relative;
   z-index: 5;
-  margin: 35px 25px 0 25px;
+  margin: 35px 21px 0 24px;
 }
 
 .do_section .do_container .box .img-box {
@@ -335,7 +338,7 @@ a:focus {
 }
 
 .who_section .detail-box {
-  margin-left: 65px;
+  margin-left: 140px;
 }
 
 .who_section .detail-box p {
@@ -717,3 +720,49 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+#box-1-contact {
+  position: relative;
+}
+.instagram-first {
+  position: absolute;
+  width: 90px !important;
+  height: 90px;
+  /* centramos la imagne con top left y transform translate; */
+  top: 25%;
+  left: 30%;
+  transform: translate(100%, 50%);
+
+}
+#box-2-contact {
+  position: relative;
+}
+.facebook-first {
+  position: absolute;
+  width: 90px !important;
+  height: 90px;
+  /* centramos la imagne con top left y transform translate; */
+  top: 25%;
+  left: 25%;
+  transform: translate(100%, 50%);
+}
+.img_cont img{
+  transition: all 0.5s ease-in-out;
+}
+.img_cont:hover img:first-child{
+  filter: brightness(0.5);
+}
+.img_cont:hover img:last-of-type{
+  transform: translate(-100px, 50%);
+}
+.img_text{
+  position: absolute;
+  color: white;
+  width: 35%;
+  right: 5%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.img_cont:hover .img_text{
+  opacity: 1;
+}

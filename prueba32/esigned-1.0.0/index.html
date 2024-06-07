@@ -19,6 +19,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
@@ -32,10 +33,14 @@
   <header class="header_section">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html" style="padding: 0 0 !important;">
           <span class="title-header">
             Amunet
           </span>
+         
+            <div id="pencil-animation" style="width: 150px; height: 150px;  position: absolute; padding-left: 26px;"></div>
+        
+        
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,13 +84,13 @@
     
     <!-- end header section -->
     <!-- slider section -->
-    <section class=" slider_section position-relative">
+    <section class=" slider_section position-relative" >
       <div class="video">
         <video autoplay muted loop id="myVideo">
           <source src="images/video.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -104,10 +109,13 @@
                       </h2>
                       <h1 class="title-carrousel">
                        Amunet
+
                       </h1>
+                  <div id="pencil-animation-2" style="width: 300px; height: 300px;  position: absolute; padding-left: 26px; top: -19%; left: 41%;"></div>
+                      
                       <p>
                         <!-- mejor titulo para un lugar de tatuajes -->
-                        Convert your ideas into a tattoo, check our designs and get in touch with us
+                        we redesign your old tattoos like our logo
                       </p>
                       <div class="">
                         <a href="">
@@ -186,7 +194,7 @@
           Select the style that you like the most and we will make it happen for you
         </p>
       </div>
-      <div class="do_container">
+      <div class="do_container" data-aos="fade-up">
         <div class="box arrow-start arrow_bg">
           <div class="img-box">
             <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg" alt="">
@@ -249,7 +257,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <div class="img-box">
+          <div class="img-box" data-aos="fade-down">
             <img src="https://artcampus.es/wp-content/uploads/2019/08/tatuaje-avanzado.jpg" alt="">
           </div>
         </div>
@@ -260,7 +268,7 @@
                 WHO WE ARE?
               </h2>
             </div>
-            <p>
+            <p data-aos="fade-down">
             
               We are a team of professional tattoo artists that are dedicated to make your ideas come true, we have a lot of experience in the field and we are always looking for new challenges to make our clients happy. The vision of our company is to be the best tattoo studio in the world, and we are working hard to make it happen.
             </p>
@@ -285,26 +293,25 @@
         <h2>
           CREATIVE WORKS
         </h2>
-        <p>
+        <p  data-aos="fade-up">
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation
         </p>
       </div>
-      <div class="work_container layout_padding2">
-        <div class="box b-1 casilla-1">
+      <div class="work_container layout_padding2" >
+        <div class="box b-1 casilla-1" data-aos="fade-right" data-aos-duration="1000">
           <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg" alt="">
         </div>
-        <div class="box b-2 casilla-2">
+        <div class="box b-2 casilla-2" data-aos="fade-left" data-aos-duration="1000">
           <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-2-400x400.jpg" alt="">
 
         </div>
-        <div class="box b-3 casilla-3">
+        <div class="box b-3 casilla-3" data-aos="fade-up" data-aos-duration="1000">
           <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-3-400x400.jpg" alt="">
 
         </div>
-        <div class="box b-4 casilla-4">
+        <div class="box b-4 casilla-4" data-aos="fade-up" data-aos-duration="1000">
           <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-5-400x400.jpg" alt="">
-
         </div>
       </div>
     </div>
@@ -648,6 +655,31 @@
     });
   </script>
   <!-- end owl carousel script -->
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      lottie.loadAnimation({
+          container: document.getElementById('pencil-animation'), // El contenedor donde se reproducirá la animación
+          renderer: 'svg',
+          loop: true, // Define si la animación se repetirá
+          autoplay: true, // Define si la animación empezará a reproducirse automáticamente
+          path: 'https://raw.githubusercontent.com/AlexisVennegas/lottie-animation/main/tDB6eOMz8L.json' // La URL del archivo JSON de la animación
+      });
+      lottie.loadAnimation({
+          container: document.getElementById('pencil-animation-2'), // El contenedor donde se reproducirá la animación
+          renderer: 'svg',
+          loop: true, // Define si la animación se repetirá
+          autoplay: true, // Define si la animación empezará a reproducirse automáticamente
+          path: 'https://raw.githubusercontent.com/AlexisVennegas/lottie-animation/main/tDB6eOMz8L.json' // La URL del archivo JSON de la animación
+      });
+     
+  </script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
