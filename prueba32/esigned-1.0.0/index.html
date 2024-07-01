@@ -31,13 +31,14 @@
 </head>
 <body>
   <header class="header_section">
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
         <a class="navbar-brand" href="index.html" style="padding: 0 0 !important;">
-          <span class="title-header">
+          <span class="title-header slide-in-elliptic-bottom-fwd">
             Amunet
+            
           </span>
-         
+          <img class="logo-header slide-in-right" src="./images/animal.png" alt="">
             <div id="pencil-animation" style="width: 150px; height: 150px;  position: absolute; padding-left: 26px;"></div>
         
         
@@ -66,12 +67,27 @@
               </li>
             </ul>
             <div class="user_option">
-              <a href="">
                 <img src="images/user.png" alt="" id="userIcon">
-              </a>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+                <div class="iniciar-sesion">
+                    <div class="inputs">
+                      Login
+                      <input type="email" placeholder="email...">
+                      <input type="password" placeholder="password">
+                      </div>
+                      <div class="buttons">
+                        <button>Login</button>
+                        <button>Register</button>
+                      </div>
+                      <div class="images">
+                          <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
+                          <img src="./images/facebook.png" alt="">
+
+                      </div>
+
+                </div>
+                <input type="text" id="inputSearchShow" placeholder="search...">
+                <button id="buttonSearch" class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                
             </div>
           </div>
         </div>
@@ -86,8 +102,11 @@
     <!-- slider section -->
     <section class=" slider_section position-relative" >
       <div class="video">
-        <video autoplay muted loop id="myVideo">
-          <source src="images/video.mp4" type="video/mp4">
+        <video autoplay muted loop id="myVideo" >
+          <source src="images/video.mp4" type="video/mp4" class="videoComplete" >
+          </video>
+        <video autoplay muted loop id="myVideoMobile" >
+          <source src="images/movile.mp4" type="video/mp4" class="videoMobile" >
         </video>
       </div>
       <div class="container" data-aos="fade-up">
@@ -109,9 +128,9 @@
                       </h2>
                       <h1 class="title-carrousel">
                        Amunet
-
+                        <img class="logo-header-2 scale-in-right" src="./images/ajolote.png" alt="">
                       </h1>
-                  <div id="pencil-animation-2" style="width: 300px; height: 300px;  position: absolute; padding-left: 26px; top: -19%; left: 41%;"></div>
+                  <!-- <div id="pencil-animation-2" style="width: 300px; height: 300px;  position: absolute; padding-left: 26px; top: -19%; left: 41%;"></div> -->
                       
                       <p>
                         <!-- mejor titulo para un lugar de tatuajes -->
@@ -187,14 +206,14 @@
     
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 class="title-carrousel" style="margin-top: 8%;">
           Styles
         </h2>
         <p>
           Select the style that you like the most and we will make it happen for you
         </p>
       </div>
-      <div class="do_container" data-aos="fade-up">
+      <div class="do_container" data-aos="fade-up" style="cursor: pointer;">
         <div class="box arrow-start arrow_bg">
           <div class="img-box">
             <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg" alt="">
@@ -255,18 +274,24 @@
 
   <section class="who_section ">
     <div class="container">
+      <div class="newcontainer">
+        <h2 class="title-carrousel " style="margin: 0 auto; font-weight: bold; text-transform: uppercase; position: relative; text-align: center; margin: 50px auto">
+          WHO WE ARE?
+        </h2>
+
+      </div>
       <div class="row">
         <div class="col-md-5">
           <div class="img-box" data-aos="fade-down">
+            <!-- <h2 class="title-carrousel" >  
+              WHO WE ARE?
+            </h2> -->
             <img src="https://artcampus.es/wp-content/uploads/2019/08/tatuaje-avanzado.jpg" alt="">
           </div>
         </div>
         <div class="col-md-7">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                WHO WE ARE?
-              </h2>
             </div>
             <p data-aos="fade-down">
             
@@ -290,7 +315,7 @@
   <section class="work_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 class="title-carrousel" style="margin: 0 auto;">
           CREATIVE WORKS
         </h2>
         <p  data-aos="fade-up">
@@ -298,7 +323,7 @@
           minim veniam, quis nostrud exercitation
         </p>
       </div>
-      <div class="work_container layout_padding2" >
+      <div class="work_container layout_padding2" style="overflow: hidden;">
         <div class="box b-1 casilla-1" data-aos="fade-right" data-aos-duration="1000">
           <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg" alt="">
         </div>
@@ -323,7 +348,7 @@
   <section class="client_section">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 class="title-carrousel" style="margin: 0 auto;">
           WHAT CUSTOMERS SAY
         </h2>
       </div>
@@ -336,14 +361,14 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Tempor incididunt <br>
+                  Alan Bernard <br>
                   <span>
-                    Dipiscing elit
+                    first customer
                   </span>
                 </h5>
                 <img src="images/quote.png" alt="">
                 <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  this is the best tattoo studio that I have ever been, the quality of the work is amazing and the prices are very good
                 </p>
               </div>
             </div>
@@ -355,14 +380,14 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Tempor incididunt <br>
+                  Princess Dianna <br>
                   <span>
-                    Dipiscing elit
+                    Recurrent Customer
                   </span>
                 </h5>
                 <img src="images/quote.png" alt="">
                 <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                i love the designs that they have, they are very creative and they can make any idea that you have come true
                 </p>
               </div>
             </div>
@@ -374,14 +399,14 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Tempor incididunt <br>
+                  Alexander Popovich<br>
                   <span>
-                    Dipiscing elit
+                    New Customer
                   </span>
                 </h5>
                 <img src="images/quote.png" alt="">
                 <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  I have been looking for a tattoo studio for a long time and I finally found the best one, the quality of the work is amazing
                 </p>
               </div>
             </div>
@@ -413,7 +438,7 @@
               20000+
             </h2>
             <h5>
-              Projects Delivered
+              Tattoos Made
             </h5>
           </div>
         </div>
@@ -433,7 +458,7 @@
               1500+
             </h2>
             <h5>
-              Cups of Coffee
+              tatto artists
             </h5>
           </div>
         </div>
@@ -507,7 +532,9 @@
                 <img src="images/location-white.png" width="18px" alt="">
               </div>
               <p>
+                <a href="./about.html" style="color: white;">
                 Address
+                </a>
               </p>
             </div>
             <div>
@@ -523,7 +550,7 @@
                 <img src="images/envelope-white.png" width="18px" alt="">
               </div>
               <p>
-                demo@gmail.com
+                Amunet@gmail.com
               </p>
             </div>
           </div>
@@ -534,7 +561,7 @@
               Informations
             </h5>
             <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              Amunet is a tattoo studio that is dedicated to make your ideas come true, we have a lot of experience in the field and we are always looking for new challenges to make our clients happy.
             </p>
           </div>
         </div>
@@ -548,12 +575,12 @@
               <div>
                 <a href="">
                   <div class="insta-box b-1">
-                    <img src="images/insta.png" alt="">
+                    <img src="images/instagram.png" alt="" style="width: 20px;">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-2">
-                    <img src="images/insta.png" alt="">
+                    <img src="images/instagram.png" alt="" style="width: 20px;">
                   </div>
                 </a>
               </div>
@@ -561,24 +588,24 @@
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/insta.png" alt="">
+                    <img src="images/instagram.png" alt="" style="width: 20px;">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/insta.png" alt="">
+                    <img src="images/instagram.png" alt="" style="width: 20px;">
                   </div>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/insta.png" alt="">
+                    <img src="images/instagram.png" alt="" style="width: 20px;">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/insta.png" alt="">
+                    <img src="images/instagram.png" alt="" style="width: 20px;">
                   </div>
                 </a>
               </div>
@@ -601,9 +628,6 @@
                 <img src="images/fb.png" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
                 <img src="images/linkedin.png" alt="">
               </a>
               <a href="">
@@ -618,23 +642,47 @@
 
   <!-- end info_section -->
 
-
+  
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      &copy; 2020 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-      Distrubuted By <a href="https://themewagon.com">ThemeWagon</a>
+      &copy; 2024 All Rights Reserved By
+      <a href="https://html.design/">Amunet</a>
+      Distrubuted By <a href="https://themewagon.com">
+        Amunet
+      </a>
     </p>
   </section>
   <!-- footer section -->
+  <div class="cookiesms" id="cookie1">
+    Este sitio web usa cookies, puedes ver la <a href="https://wwww.dominio.com/politica-cookies.html">politica de cookies</a>
+    <button onclick="controlCookies()">Aceptar</button>
+  </div>
+  <div class="cookies2" id="cookie2">
+    Politica de cookies + 
+  </div>
+
+  <script>
+    if (localStorage.controlCookies > 0) {
+      cookie1.setatribute('style', "animation: desaparecer 5s;");
+    }
+    function controlCookies() {
+      localStorage.controlCookies = (localStorage.controlCookies || 0)
+
+      localStorage.controlCookies++;
+
+      cookie1.style.display = "none";
+    }
+  </script>
+
+
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <!-- owl carousel script 
-    -->
+  -->
     <script src="./js/index.js"></script>
   <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
@@ -653,10 +701,10 @@
         }
       }
     });
-  </script>
+    </script>
   <!-- end owl carousel script -->
-
- 
+  
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -680,7 +728,6 @@
   <script>
     AOS.init();
   </script>
-
 </body>
 
 </html>

@@ -10,6 +10,12 @@
     font-family: "Cedarville Cursive", cursive;
     font-size: 2.5rem;
 }
+.new-title  {
+    /* font family previamente importada */
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 7.5rem;
+    margin-left: 5px;
+}
 .button-carrousel {
     font-family: "Cedarville Cursive", cursive;
     font-size: 1.5rem;
@@ -21,18 +27,19 @@ header {
     animation: adjust-header linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
-    /* background-color: black; */
     z-index: 7;
 }
 .title-carrousel {
-    font-family: "Cedarville Cursive", cursive;
+    /* font-family: "Cedarville Cursive", cursive; */
     font-size: 2.5rem;
     text-transform: capitalize;
 }
 .title-select {
-    font-family: "Cedarville Cursive", cursive;
-    font-size: 2rem;
+    /* font-family: "Cedarville Cursive", cursive; */
+    font-size: 2.3rem;
     text-transform: lowercase;
+    margin: 0 auto
+    ;
 }
 .video {
     width: 100%;
@@ -68,7 +75,7 @@ header {
 .casilla-1 {
     width: 656px;
     height: 331px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .casilla-1 > img {
     width: 100%;
@@ -79,17 +86,17 @@ header {
 .casilla-2 {
     width: 505px;
     height: 331px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .casilla-3 {
     width: 505px;
     height: 330px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .casilla-4 {
     width: 656px;
     height: 330px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .nav-link:hover {

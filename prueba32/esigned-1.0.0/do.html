@@ -11,7 +11,11 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/new.css">
   <title>Style</title>
 
   <!-- slider stylesheet -->
@@ -32,7 +36,7 @@
 </head>
 
 <body class="sub_page">
-  <header class="header_section" style="background: #0000004f;">
+  <header class="header_section">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
         <a class="navbar-brand" href="index.html" style="padding: 0 0 !important;">
@@ -82,77 +86,112 @@
   </header>
   <div class="hero_area">
     <!-- header section strats -->
-   
+    <div class="swiper-container main-slider loading">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style=" background: #141414da !important;">
+          <figure class="slide-bgimg" style="background-image:url(https://www.primor.eu/blog/wp-content/uploads/2024/04/TATUAJE-ESCORPION-1140x760.jpg)">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Simple Tatto</p>
+            <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://www.instyle.es/medio/2023/06/06/tatuajes-en-las-manos-para-hombre-y-mujer_16a66309_230606182429_1280x961.jpg)">
+            <img src="https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Figure tatto</p>
+            <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://www.cadenadial.com/wp-content/uploads/2023/08/tatus-16.jpg)">
+            <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Clasic Tatto</p>
+            <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://content.clara.es/medio/2024/05/28/tatuajes-pequenos-para-mujer_b42d3cdd_240528131505_1280x720.webp)">
+            <img src="https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Elemental Tatto</p>
+            <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://media.glamour.mx/photos/64d4423e8bcbb1503ffa0a3e/master/pass/tatuajes-pequenos.jpg)">
+            <img src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">tatto</p>
+            <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    
+    <!-- Thumbnail navigation -->
+    <div class="swiper-container nav-slider loading">
+      <div class="swiper-wrapper" role="navigation">
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://www.primor.eu/blog/wp-content/uploads/2024/04/TATUAJE-ESCORPION-1140x760.jpg)">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Simple Tatto</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://www.instyle.es/medio/2023/06/06/tatuajes-en-las-manos-para-hombre-y-mujer_16a66309_230606182429_1280x961.jpg)">
+            <img src="https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Figure tatto</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://www.cadenadial.com/wp-content/uploads/2023/08/tatus-16.jpg)">
+            <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Clasic Tatto</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://content.clara.es/medio/2024/05/28/tatuajes-pequenos-para-mujer_b42d3cdd_240528131505_1280x720.webp)">
+            <img src="https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Elemental Tatto</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(https://media.glamour.mx/photos/64d4423e8bcbb1503ffa0a3e/master/pass/tatuajes-pequenos.jpg)">
+            <img src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">tatto</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- end header section -->
   </div>
 
   <!-- do section -->
 
-  <section class="do_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2 class="title-select">
-          TATTOO STYLES
-        </h2>
-       
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-        </p>
-      </div>
-      <div class="do_container">
-        <div class="box arrow-start arrow_bg" data-aos="flip-left">
-          <div class="img-box">
-            <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6 class="title-select">
-              lineal
-            </h6>
-          </div>
-        </div>
-        <div class="box arrow-middle arrow_bg" data-aos="flip-left">
-          <div class="img-box">
-            <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-2-400x400.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6 class="title-select">
-              Color
-            </h6>
-          </div>
-        </div>
-        <div class="box arrow-middle arrow_bg" data-aos="flip-left">
-          <div class="img-box">
-            <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-3-400x400.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6 class="title-select">
-              Black and white
-            </h6>
-          </div>
-        </div>
-        <div class="box arrow-end arrow_bg" data-aos="flip-left">
-          <div class="img-box">
-            <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-4-400x400.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6 class="title-select">
-              Realism
-            </h6>
-          </div>
-        </div>
-        <div class="box ">
-          <div class="img-box" data-aos="flip-left">
-            <img src="https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-5-400x400.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6 class="title-select">
-              Geometric
-            </h6>
-          </div>
-        </div>
-      </div>
-    </div>
+  
+      
+    </section>
   </section>
 
   <!-- end do section -->
@@ -265,7 +304,7 @@
                 <img src="images/fb.png" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="images/twitter.png" alt="" style="width: 20%;">
               </a>
               <a href="">
                 <img src="images/linkedin.png" alt="">
@@ -340,6 +379,116 @@
  <script>
    AOS.init();
  </script>
+ <script type="text/javascript">
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    navText: [],
+    center: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
+</script>
+<!-- end owl carousel script -->
+<script>
+  // Params
+let mainSliderSelector = '.main-slider',
+  navSliderSelector = '.nav-slider',
+  interleaveOffset = 0.5;
+
+// Main Slider
+let mainSliderOptions = {
+    loop: true,
+    speed:1000,
+    autoplay:{
+      delay:3000
+    },
+    loopAdditionalSlides: 10,
+    grabCursor: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      init: function(){
+        this.autoplay.stop();
+      },
+      imagesReady: function(){
+        this.el.classList.remove('loading');
+        this.autoplay.start();
+      },
+      slideChangeTransitionEnd: function(){
+        let swiper = this,
+            captions = swiper.el.querySelectorAll('.caption');
+        for (let i = 0; i < captions.length; ++i) {
+          captions[i].classList.remove('show');
+        }
+        swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
+      },
+      progress: function(){
+        let swiper = this;
+        for (let i = 0; i < swiper.slides.length; i++) {
+          let slideProgress = swiper.slides[i].progress,
+              innerOffset = swiper.width * interleaveOffset,
+              innerTranslate = slideProgress * innerOffset;
+         
+          swiper.slides[i].querySelector(".slide-bgimg").style.transform =
+            "translateX(" + innerTranslate + "px)";
+        }
+      },
+      touchStart: function() {
+        let swiper = this;
+        for (let i = 0; i < swiper.slides.length; i++) {
+          swiper.slides[i].style.transition = "";
+        }
+      },
+      setTransition: function(speed) {
+        let swiper = this;
+        for (let i = 0; i < swiper.slides.length; i++) {
+          swiper.slides[i].style.transition = speed + "ms";
+          swiper.slides[i].querySelector(".slide-bgimg").style.transition =
+            speed + "ms";
+        }
+      }
+    }
+  };
+let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+
+// Navigation Slider
+let navSliderOptions = {
+    loop: true,
+    loopAdditionalSlides: 10,
+    speed:1000,
+    spaceBetween: 5,
+    slidesPerView: 5,
+    centeredSlides : true,
+    touchRatio: 0.2,
+    slideToClickedSlide: true,
+    direction: 'vertical',
+    on: {
+      imagesReady: function(){
+        this.el.classList.remove('loading');
+      },
+      click: function(){
+        mainSlider.autoplay.stop();
+      }
+    }
+  };
+let navSlider = new Swiper(navSliderSelector, navSliderOptions);
+
+// Matching sliders
+mainSlider.controller.control = navSlider;
+navSlider.controller.control = mainSlider;
+</script>
   <!-- end owl carousel script -->
 
 </body>
