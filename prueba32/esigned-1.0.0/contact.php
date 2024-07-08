@@ -1,5 +1,77 @@
-<?php 
+<!-- Abro PHP -->
+<?php
+//Definir las variables y establecer valores vacíos
+$nameErr = $apellidoErr = $emailErr = $subjectErr = $messageErr = "";//todos los Err valen nada
+$name = $apellido = $email = $subject = $message = "";//estas variables no valen nada
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //validación del nombre
+    if(empty($_POST["name"])) {
+        $nameErr = "El nombre es obligatorio";
+    } else {
+        $name = test_input($_POST["name"]);
+        if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+            $nameErr = "Sólo se permitn letras y espacios en blanco";
+        }
+    }
+    //validación del apellido
+    if(empty($_POST["apellido"])) {
+        $apellidoErr = "El apellido es obligatorio";
+    } else {
+        $apellido = test_input($_POST["apellido"]);
+        if (!preg_match("/^[a-zA-Z-' ]*$/", $apellido)) {
+            $apellidoErr = "Sólo se permitn letras y espacios en blanco";
+        }
+    }
+
+    //validación del correo electrónico
+    if(empty($_POST["email"])) {
+        $emailErr = "El correo electrónico es obligatorio";
+    } else {
+        $email = test_input($_POST["email"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "Formato de correo inválido";
+        }
+    }
+
+    //Validación del asunto
+    if(empty($_POST["subject"])) {
+        $subjectErr = "El asunto es obligatorio";
+    } else {
+        $subject = test_input($_POST["subject"]);
+    }
+
+    //validación del mensaje
+    if(empty($_POST["message"])) {
+        $messageErr = "El mensaje es obligatorio";
+    } else {
+        $message = test_input($_POST["message"]);
+    }
+
+    //Si no hay errores, vamos a procesar el formulario enviándolo por correo
+    if($nameErr == "" && $apellidoErr == "" && $emailErr == "" && $subjectErr == "" && $messageErr == "") {
+        $to = "elcorreodondevaallegar@hotmail.com";//aquí el correo donde queréis mandarlo
+        $headers =  "From: " .$email."\r\n". 
+                    "Reply-to: ".$email."\r\n".
+                    "X-Mailer: PHP/".phpversion();
+        $full_message = "Nombre: $name\nApellido: $apellido\n Correo: $email\n\nMensaje:\n$message";
+        if (mail($to, $subject,$full_message,$headers)) {
+            echo "<h3>Gracias por contactarnos, $name. Te responderemos lo antes posible</h3>";
+            $name = $apellido = $email = $subject = $message = "";
+        } else {
+            echo "<h3>Lo siento, ocurrió un error al enviar tu mensaje. Inténtalo de nuevo</h3>";
+        }
+        //limpiar los valores después de enviar
+        $name = $apellido = $email = $subject = $message = "";
+        
+    }
+}
+function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +91,11 @@
   <!-- fin del Slider -->
     <title>Questions</title>
 
-
+    <style>
+    .error {
+        color:red;
+    }
+</style>
 
   <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -119,23 +195,29 @@
           <div class="row">
             <div class="col-md-9 mx-auto">
               <div class="contact-form">
-                <form action="">
+              <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                   <div>
-                    <input type="text" placeholder="Full Name ">
+                    <input type="text" name="name" value="<?php echo $name;?>" placeholder="Nombre">
+                    <span class="error"><?php echo $nameErr;?></span>
                   </div>
                   <div>
-                    <input type="text" placeholder="Phone Number">
+                    <input type="text" name="apellido" value="<?php echo $apellido;?>" placeholder="Apellido">
+                    <span class="error"><?php echo $apellidoErr;?></span>
                   </div>
                   <div>
-                    <input type="email" placeholder="Email Address">
+                    <input type="email" name="email" value="<?php echo $email;?>" placeholder="Correo">
+                    <span class="error"><?php echo $emailErr;?></span>
                   </div>
                   <div>
-                    <input type="text" placeholder="Message" class="input_message">
+                    <input type="text" name="subject" value="<?php echo $subject;?>" placeholder="Asunto"> 
+                    <span class="error"><?php echo $subjectErr;?></span>
+                  </div>
+                  <div>
+                    <textarea style="border-radius: 15px" name="message" rows="5" cols="96" placeholder="mensaje"><?php echo $message;?></textarea>
+                    <span class="error"><?php echo $messageErr;?></span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn_on-hover">
-                      Send
-                    </button>
+                    <input class="btn_on-hover" type="submit" name="submit" value="Enviar">
                   </div>
                 </form>
               </div>
